@@ -28,6 +28,7 @@ route:
       - match:
           severity: critical
         receiver: linux-team-manager
+        continue: true
       - match:
           severity: warning
         receiver: linux-team-lead
