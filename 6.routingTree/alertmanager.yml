@@ -20,6 +20,7 @@ route:
         app_type: linux
       # fallback receiver
       receiver: linux-team-admin
+      group_by: [category]
       routes:
       - match:
           severity: critical
