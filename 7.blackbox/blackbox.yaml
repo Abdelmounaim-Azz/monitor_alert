@@ -44,3 +44,13 @@ modules:
       - expect: "^:[^ ]+ 001"
   icmp:
     prober: icmp
+    icmp:
+      preferred_ip_protocol: ip4
+
+
+  dns_example:
+    prober: dns
+    dns:
+      transport_protocol: "tcp"
+      preferred_ip_protocol: ip4
+      query_name: "www.google.com"
